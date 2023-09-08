@@ -5,18 +5,18 @@ import java.util.Date;
 public class Contacts {
 	
 	private int id;
-	private String name;
-	private Date dateRegistration;
+	private static String name;
+	private static Date dateRegistration;
 	
 	
 	public Contacts() {}
-	public Contacts(int id, String name, Date dateRegistration) {
+	public Contacts(String name, Date dateRegistration) {
 		
-		this.id = id;
+		
 		this.name = name;
 		this.dateRegistration = dateRegistration;
 	}
-	public String getName() {
+	public static String getName() {
 		return name;
 	}
 	public void setName(String name) {
@@ -27,7 +27,7 @@ public class Contacts {
 		return id;
 	}
 	
-	public Date getDateRegistration() {
+	public static Date getDateRegistration() {
 		return dateRegistration;
 	}
 	public void setDateRegistration(Date dateRegistration) {
